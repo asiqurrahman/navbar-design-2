@@ -1,0 +1,148 @@
+:root {
+    --color-one: #1f2833;
+    --color-two: #66FCf1;
+    --color-three: #0b0c10;
+    --color-four: #c5c6c7;
+    --color-five: #45a29e;
+    --animate-delay: 0.9s;
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--color-four) !important;
+  }
+
+  /* Navbar Css */
+
+  #navbar2 {
+    display: flex;
+    min-height: 8vh;
+    font-family: 'Acme', sans-serif;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    transition: 1000ms ease;
+    
+  }
+
+  #navbar2.scroll {
+    background-color: var(--color-one);
+    transition: 1000ms ease;
+  }
+  
+  .nav-links2{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    text-decoration: none;
+    margin-left: 38vw;
+    padding-top: 10px;
+    padding-bottom: 10px
+    
+  }
+  
+  .nav-links2 li{
+    list-style: none;
+    float: right;
+  }
+  
+  .nav-links2 a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-two);
+    
+  }
+  
+  .logo2 h4 a {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 10px;
+    color: var(--color-two);
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 5px;
+  }
+  
+  .logohead2 {
+    float: left;
+    margin-left: 13vw;
+    display: flex;
+    font-weight: bold
+  }
+
+  /* Navbar items/background css */
+
+  #navbackground {
+    height: 100vh;
+    background-color: #1f2833;
+    color: white;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #container {
+    display: flex;
+    padding-top: 20vh;;
+    width: 100%;
+  }
+  
+  .box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box:first-child > span { margin-right: auto; }
+
+  .box:last-child  > span { margin-left: auto;  }
+
+  
+
+  #firstnavimage img {
+    height: 400px;
+    width: 600px;
+    margin: 0%;
+  }
+
+  #nav-h1 {
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  #nav-h1 h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Acme', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    --animate-delay: 0.9s;
+    color: white;
+  }
+
+/* SVG AND ANIMATIONS */
+  #wave {
+    width: 200%;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    animation: wave linear 40s infinite;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  @keyframes wave {
+    100% {
+      transform: translateX(0)
+    }
+    0% {
+      transform: translateX(-50%);
+    }
+  }
+
