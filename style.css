@@ -14,6 +14,7 @@
 
   body {
     background-color: var(--color-four) !important;
+    width: 100%;
   }
 
   /* Navbar Css */
@@ -97,6 +98,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    
   }
 
   .box:first-child > span { margin-right: auto; }
@@ -145,4 +147,49 @@
       transform: translateX(-50%);
     }
   }
+
+  /* SIGN UP */
+
+  #nav-signup {
+    display: flex;
+    align-items: flex-end;
+    
+  } 
+  
+  #nav-signup-inner {
+
+    width: 40%;
+    height: 20%;
+    margin-bottom: 20%;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
+    border-color: var(--color-two);
+    z-index: 5;
+    background-color: #16C79A;
+    overflow: hidden;
+  }
+
+  #nav-signup-inner:hover {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    transition-duration: 2s; 
+  }
+
+  #nav-signup h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-signup h1:hover {
+    color: black;
+    transition-duration: 2s; 
+  }
+  
 
