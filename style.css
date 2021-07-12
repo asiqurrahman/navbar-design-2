@@ -106,9 +106,9 @@
   
 
   #firstnavimage img {
-    height: 400px;
-    width: 600px;
-    margin: 0%;
+    height: 75%;
+    width: 80%;
+    margin: auto;
   }
 
   #nav-h1 {
@@ -120,7 +120,7 @@
     text-align: center;
     margin-top: 30px;
     font-family: 'Acme', sans-serif;
-    font-size: 120px;
+    font-size: 8em;
     font-weight: bold;
     --animate-delay: 0.9s;
     color: white;
