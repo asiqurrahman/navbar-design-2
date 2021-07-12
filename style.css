@@ -61,7 +61,7 @@
   }
   
   .logo2 h4 a {
-    font-size: 30px;
+    font-size: 1.25em;
     text-decoration: none;
     margin: 10px;
     color: var(--color-two);
@@ -89,7 +89,7 @@
 
   #container {
     display: flex;
-    padding-top: 20vh;;
+    padding-top: 10%;;
     width: 100%;
   }
   
