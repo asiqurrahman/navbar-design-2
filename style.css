@@ -92,7 +92,7 @@
 
   #container {
     display: flex;
-    padding-top: 10%;;
+    padding-top: 10%;
     width: 100%;
   }
   
@@ -100,7 +100,6 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    
   }
 
   .box:first-child > span { margin-right: auto; }
