@@ -107,7 +107,6 @@
   .box:last-child  > span { margin-left: auto;  }
 
   
-
   #firstnavimage img {
     height: 75%;
     width: 80%;
@@ -154,11 +153,9 @@
   #nav-signup {
     display: flex;
     align-items: flex-end;
-    
   } 
   
   #nav-signup-inner {
-
     width: 40%;
     height: 20%;
     margin-bottom: 20%;
@@ -169,6 +166,7 @@
     z-index: 5;
     background-color: #16C79A;
     overflow: hidden;
+    transition-duration: 1s;
   }
 
   #nav-signup-inner:hover {
@@ -186,6 +184,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 1s;
   }
 
   #nav-signup h1:hover {
