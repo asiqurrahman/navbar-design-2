@@ -80,7 +80,7 @@
 
   #navbackground {
     height: 100vh;
-    background-image: linear-gradient(#1f2833 75%, #c5c6c7);;
+    background-color: #1f2833;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -192,4 +192,40 @@
     transition-duration: 1s; 
   }
   
+    /* Three step intro */
+
+    #simpleintro {
+      background-color: #66FCf1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #first-intro {
+      background-color: #66FCf1;
+    }
+
+    #second-intro {
+      background-color: #1f2833;
+    }
+
+    #third-intro {
+      background-color: #66FCf1;
+    }
+
+    #first-intro-image {
+      background-color: white;
+    }
+    
+    #second-intro-image {
+      background-color: white;
+    }
+
+    #third-intro-image {
+      background-color: white;
+    }
+
+    .intro-box {
+      display: flex;
+      justify-content: space-between;
+    }
 
