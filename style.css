@@ -13,8 +13,9 @@
   }
 
   body {
-    background-color: var(--color-four) !important;
+    background-color: #f5f5f5 !important;
     width: 100%;
+    
   }
 
   /* Navbar CSS */
@@ -28,7 +29,7 @@
     position: fixed;
     z-index: 5;
     transition: 1000ms ease;
-    
+
   }
 
   #navbar2.scroll {
@@ -111,6 +112,7 @@
     height: 75%;
     width: 80%;
     margin: auto;
+    pointer-events: none;
   }
 
   #nav-h1 {
@@ -130,24 +132,28 @@
 
 /* SVG AND ANIMATIONS */
   #wave {
-    width: 200%;
+    width: 100%;
     height: 40%;
     left: 0;
     position: absolute;
-    animation: wave linear 40s infinite;
+    /* SVG AND ANIMATIONS animation: wave linear 40s infinite; */
     bottom: 0;
     z-index: 0;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
-
-  @keyframes wave {
+ /* @keyframes wave {
     100% {
       transform: translateX(0)
     }
     0% {
       transform: translateX(-50%);
     }
-  }
-
+  } */
+ 
   /* SIGN UP */
 
   #nav-signup {
@@ -163,7 +169,7 @@
     border-style: solid;
     box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
     border-color: var(--color-two);
-    z-index: 5;
+    z-index: 2;
     background-color: #16C79A;
     overflow: hidden;
     transition-duration: 1s;
@@ -173,7 +179,6 @@
     background-color: white;
     border-radius: 50px;
     color: black;
-    transition-duration: 1s; 
   }
 
   #nav-signup h1 {
@@ -195,37 +200,64 @@
     /* Three step intro */
 
     #simpleintro {
-      background-color: #66FCf1;
+      background-color: whitesmoke;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-    }
-
-    #first-intro {
-      background-color: #66FCf1;
-    }
-
-    #second-intro {
-      background-color: #1f2833;
-    }
-
-    #third-intro {
-      background-color: #66FCf1;
-    }
-
-    #first-intro-image {
-      background-color: white;
-    }
-    
-    #second-intro-image {
-      background-color: white;
-    }
-
-    #third-intro-image {
-      background-color: white;
+      justify-content: center;
+      width: 100%;
     }
 
     .intro-box {
       display: flex;
-      justify-content: space-between;
+      margin-left: 10em;
+      margin-right: 10em;
+      overflow: hidden;
     }
 
+    .intro-box-inner {
+      flex: 1 1 0px;
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .intro-box-inner-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    #first-intro {
+      background: linear-gradient(to right, #1f2833 50%, #f5f5f5);
+    }
+
+    #second-intro {
+      background: linear-gradient(to left, #1f2833 50%, #f5f5f5);
+    }
+
+    #third-intro {
+      background: linear-gradient(to right, #1f2833 50%, #f5f5f5);
+    }
+
+    .intro-box-inner-img img {
+      height: auto;
+      width: auto;
+    }
+
+    /*second image rotation*/
+
+    .rotate {
+      animation: rotation 75s infinite linear;
+  
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+    
