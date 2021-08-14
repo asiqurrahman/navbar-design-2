@@ -109,7 +109,6 @@
 
   
   #firstnavimage img {
-    height: 75%;
     width: 80%;
     margin: auto;
     pointer-events: none;
@@ -213,6 +212,7 @@
       margin-left: 10em;
       margin-right: 10em;
       overflow: hidden;
+      border-radius: 2em;
     }
 
     .intro-box-inner {
@@ -226,18 +226,28 @@
     .intro-box-inner-img {
       display: flex;
       justify-content: center;
+    
     }
 
     #first-intro {
-      background: linear-gradient(to right, #1f2833 50%, #f5f5f5);
+      background: linear-gradient(to right, #1f2833 100%, #f5f5f5);
     }
 
     #second-intro {
-      background: linear-gradient(to left, #1f2833 50%, #f5f5f5);
+      background-color: whitesmoke;
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      /*box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;*/
+    }
+    .intro-box-inner h2 {
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+    #second-intro h2 {
+      color: black;
     }
 
     #third-intro {
-      background: linear-gradient(to right, #1f2833 50%, #f5f5f5);
+      background: linear-gradient(to right, #1f2833 100%, #f5f5f5);
     }
 
     .intro-box-inner-img img {
